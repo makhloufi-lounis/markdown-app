@@ -9,5 +9,9 @@ install:
   - npm run export
 script:
   - react-scripts test
-deploy
-
+deploy:
+  provider: script
+  script: npm run deploy
+  skip_cleanup: true
+  on:
+    branch: master
