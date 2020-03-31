@@ -5,8 +5,7 @@ cache:
   directories:
     - node_modules
 install:
-  #- npm install marked bootstrap
-  - npm run export
+  - npm install marked bootstrap
 script:
   - react-scripts test
 deploy:
