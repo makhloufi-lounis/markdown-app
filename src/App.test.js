@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Les paragraphes sont séparés par une ligne vide', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(/sont séparés par une ligne/i);
   expect(linkElement).toBeInTheDocument();
 });
