@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { render } from '@testing-library/react';
-import App from './App';
+import App from './App'
+import ReactDOM from 'react-dom'
 
-test('Les paragraphes sont séparés par une ligne vide', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/sont séparés par une ligne/i);
-  expect(linkElement).toBeInTheDocument();
-});
+it('renders without crashing', () => {
+  const div = document.createElement('div')
+  ReactDOM.render(<App />, div)
+})
