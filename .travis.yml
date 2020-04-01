@@ -10,9 +10,7 @@ script:
   - npm test
 deploy:
   provider: script
-  script: 
-    - npm run deploy
-    - yes | Set up and deploy “~/build/makhloufi-lounis/markdown-app”
+  script: now --token=$NOW_TOKEN
   skip_cleanup: true
   on:
     branch: master
