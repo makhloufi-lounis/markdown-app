@@ -10,7 +10,7 @@ script:
   - npm test
 deploy:
   provider: script
-  script: Y | now --token=$NOW_TOKEN
+  script: now --token=$NOW_TOKEN --confirm --no-clipboard 
   skip_cleanup: true
   on:
     branch: master
